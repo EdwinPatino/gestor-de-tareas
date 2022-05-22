@@ -134,7 +134,7 @@ if($_POST){
                 <div class="col-12 py-1">
                     <div>
                         <label for="txtDescripcion">Descripción</label>
-                        <textarea name="txtDescripcion" id="txtDescripcion" class="form-control" value="<?php echo isset($aTareas[$id]["descripcion"])? $aTareas[$id]["descripcion"] : ""; ?>"></textarea>
+                        <textarea name="txtDescripcion" id="txtDescripcion" class="form-control"><?php echo isset($aTareas[$id]["descripcion"])? $aTareas[$id]["descripcion"] : ""; ?></textarea>
                     </div>
                     <div class="text-center py-1">
                         <button type="submit" id="btnEnviar" name="btnEnviar" class="btn btn-primary text-center">ENVIAR</button>
